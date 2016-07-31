@@ -27,13 +27,12 @@ int main(){
 	
 	x=0;
 	y=r;
-	putpixel(xc+x,yc-y,1);
+	drawPixel(xc,yc,x,y);
 	
 	p=3-(2*r);
 	
 	for(x=0;x<=y;x++){
 		if (p<0){
-			y=y;
 			p=(p+(4*x)+6);
 		}
 		else{
